@@ -20,10 +20,11 @@ $subject=$_POST['email'];
 if (preg_match($pattern, $subject))
 {
     $_SESSION['email']=$_POST['email'];
+    $FullPathToPicture='http://'.$_SERVER['HTTP_HOST'] . $_SESSION['path_png'];
     ?>
     <img src="captcha.php" alt=""><br>
-    <a href="<?php echo $_SESSION['path_png']?>" download>Скачать</a><br>
-    <input id="link_png" value="<?php echo $_SESSION['path_png']?>">
+    <a href="<?php echo $FullPathToPicture?>" download>Скачать</a><br>
+    <input id="link_png" value="<?php echo $FullPathToPicture?>">
     <button class="btn btn-success button" id="copy-button" data-clipboard-target="#link_png">Copy</button>
     <script>
         (function(){new Clipboard('#copy-button');})();
