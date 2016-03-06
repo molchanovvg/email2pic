@@ -8,18 +8,18 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
 
 
 
 </head>
 <body>
-<div class="container">
-        <div class="col-lg-4">
-            <?php
-            session_start();
-            if ((empty($_POST['email'])))
-            {
+<div class="jumbotron vertical-center">
+    <div class="col-lg-3  container text-center">
+        <?php
+        session_start();
+        if ((empty($_POST['email'])))
+        {
             if (!empty($_SESSION['ErrorMessage']))
             {
                 ?>
@@ -41,11 +41,10 @@
                     </div>
                 </div>
             </form>
-        </div>
-
-    <?php
-    }
-    ?>
+            <?php
+        }
+        ?>
+    </div>
 </div>
 </body>
 </html>
