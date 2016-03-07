@@ -18,7 +18,7 @@ session_start();
 </head>
 <body>
 <div class="jumbotron vertical-center">
-    <div class="col-lg-3  container text-center">
+    <div class="col-lg-4  container text-center">
         <?php
         if ((empty($_POST['email'])))
         {
@@ -30,6 +30,10 @@ session_start();
                 $_SESSION['ErrorMessage']='';
             }
             ?>
+            <h1>Защита от спама</h1>
+            <p>Указанный имейл никому не передаётся и не сохраняется на сервере</p>
+            <a href="https://github.com/molchanovvg/email2pic">Убедитесь в этом на Github</a>
+            <br>  <br>
             <form class="form-horizontal" method="post" action="result.php" role="form" >
                 <div class="form-group">
                     <label for="mail" class="col-lg-2 control-label">Email:</label>
