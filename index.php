@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -17,7 +20,6 @@
 <div class="jumbotron vertical-center">
     <div class="col-lg-3  container text-center">
         <?php
-        session_start();
         if ((empty($_POST['email'])))
         {
             if (!empty($_SESSION['ErrorMessage']))
