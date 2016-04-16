@@ -1,5 +1,6 @@
 # email2pic
 [Try the service email2pic](http://email2pic.molchanov.site/)
+[Readme RUS](https://github.com/molchanovvg/email2pic/blob/master/README.md)
 ### What is it?
 email2pic Web application allows you to generate a .png image file Introduction email. Placing email as an image, it will protect from spambots.
 ### How to use?

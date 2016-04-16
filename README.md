@@ -1,5 +1,6 @@
 # email2pic
 [Попробовать сервис email2pic](http://email2pic.molchanov.site/)
+[Readme ENG](https://github.com/molchanovvg/email2pic/blob/master/README.ENG.md)
 ### Что это?
 Веб-приложение email2pic позволяет сгенерировать .png файл с изображением введеного email. Размещение email в виде изображения, позволит защититься от спам-ботов.
 ### Как пользоваться?
