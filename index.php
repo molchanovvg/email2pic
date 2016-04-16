@@ -22,13 +22,7 @@ session_start();
         <?php
         if ((empty($_POST['email'])))
         {
-            if (!empty($_SESSION['ErrorMessage']))
-            {
-                ?>
-                <div class="bg-danger"><?php echo $_SESSION['ErrorMessage'];?></div>
-                <?php
-                $_SESSION['ErrorMessage']='';
-            }
+
             ?>
             <h1>Защита от спама</h1>
             <p>Указанный имейл никому не передаётся и не сохраняется на сервере</p>
@@ -41,6 +35,15 @@ session_start();
                         <input type="email" class="form-control" name="email" placeholder="Email">
                     </div>
                 </div>
+                <?php
+                if (!empty($_SESSION['ErrorMessage']))
+                {
+                    ?>
+                    <div class="bg-danger"><?php echo $_SESSION['ErrorMessage'];?></div>
+                    <?php
+                    $_SESSION['ErrorMessage']='';
+                }
+                ?>
                 <div class="form-group">
                     <div class="col-lg-10  col-sm-offset-2">
                         <button type="submit" class="btn btn-success">Сгенерировать картинку</button>
